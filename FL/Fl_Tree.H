@@ -169,13 +169,15 @@
    switch ( tree->callback_reason() ) {
      case FL_TREE_REASON_SELECTED: [..]
      case FL_TREE_REASON_DESELECTED: [..]
-     case FL_TREE_REASON_RESELECTED: [..]
+     case FL_TREE_REASON_RESELECTED: [..] 
      case FL_TREE_REASON_OPENED: [..]
      case FL_TREE_REASON_CLOSED: [..]
    }
    :
  }
  \endcode
+ 
+ Note that FL_TREE_REASON_RESELECTED will only be invoked if Fl_Tree_Item_Reselect_Mode is FL_TREE_SELECTABLE_ALWAYS.
 
  \par SIMPLE EXAMPLES
  To find all the selected items:
